@@ -1,0 +1,52 @@
+name: Extract Azbry-MD.zip
+
+on:
+  # jalan otomatis saat file ZIP berubah
+  push:
+    paths:
+      - "Azbry-MD.zip"
+  # bisa dijalankan manual dari tab Actions
+  workflow_dispatch: {}
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Ensure unzip is available
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y unzip
+
+      - name: Validate ZIP
+        run: |
+          test -f Azbry-MD.zip || (echo "Azbry-MD.zip tidak ditemukan di root repo." && exit 1)
+
+      - name: Clean target folder
+        run: |
+          rm -rf extracted
+          mkdir -p extracted
+
+      - name: Extract Azbry-MD.zip -> extracted/
+        run: |
+          unzip -q -o Azbry-MD.zip -d extracted
+          echo "Isi diextract ke ./extracted"
+
+      # OPSIONAL: commit hasil ekstrak ke repo (folder ./extracted)
+      - name: Commit extracted files (optional)
+        if: ${{ github.event_name != 'pull_request' }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add extracted
+          if git diff --cached --quiet; then
+            echo "Tidak ada perubahan untuk di-commit."
+          else
+            git commit -m "chore: extract Azbry-MD.zip to ./extracted [skip ci]"
+            git push
+          fi
