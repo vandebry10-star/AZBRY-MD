@@ -1,92 +1,81 @@
 <div align="center">
 
-<img src="https://lunara.drizznesiasite.biz.id/f/4cXLIx.jpg?key=rCSo1f4LTX-CF0dzCMnHsA" width="700"/>
+<img src="https://raw.githubusercontent.com/github/explore/main/topics/javascript/javascript.png" width="96" />
 
-# 🌌 **AZBRY-MD**
-### ⚙️ *Next-Generation WhatsApp Multi-Device Framework*
+# ⚡ AZBRY‑MD — WhatsApp Multi‑Device Bot
 
-> A fully modular, AI-powered bot core designed by **FebryWesker**  
-> for those who code not just to function — but to *create identity*.
-
-![GitHub repo size](https://img.shields.io/github/repo-size/vandebry10-star/AZBRY-MD?color=green)
-![GitHub license](https://img.shields.io/github/license/vandebry10-star/AZBRY-MD?color=blue)
-![GitHub stars](https://img.shields.io/github/stars/vandebry10-star/AZBRY-MD?color=yellow)
-![GitHub forks](https://img.shields.io/github/forks/vandebry10-star/AZBRY-MD?color=orange)
-![Node.js](https://img.shields.io/badge/Node.js-20.x-darkgreen?logo=node.js)
+**Dark • Fast • Neon** — Built by **FebryWesker** for the **Azbry** ecosystem.  
+Designed for stability, clean structure, and a bold aesthetic.
 
 </div>
 
----
-
-## 🧠 **About AZBRY**
-
-> *“Forged in dark neon, powered by clean code.”*
-
-AZBRY-MD isn’t just another bot —  
-it’s the **central core** of the Azbry ecosystem —  
-a hybrid framework balancing **stability**, **aesthetics**, and **automation**.
-
-Designed with a **dark, neon-inspired architecture**,  
-every module follows Azbry’s global style — sharp, sleek, and alive.
-
----
----
-
-## 👤 Pengenalan Developer
-
-**Nama Developer:** FebryWesker  
-**Proyek:** Azbry Project  
-**Versi Bot:** Azbry-MD Stable  
-**Bahasa:** JavaScript (Node.js)  
-**Kontak:** [Instagram](https://instagram.com/syfebry_)  
-**Portofolio:** [https://bit.ly/4nnTGjr](https://bit.ly/4nnTGjr)
-
-Azbry dikembangkan untuk menjadi framework *open-source* yang ringan dan rapi, dengan integrasi tema dan struktur modular.  
-Setiap fitur dikembangkan secara independen agar mudah diperluas dan dipelihara.
+<p align="center">
+  <img src="https://img.shields.io/badge/Runtime-Node.js_18+-informational?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Platform-WhatsApp_MD-7A42F4?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Style-Azbry%20Neon-17ff46?style=for-the-badge">
+</p>
 
 ---
 
-## 🧠 Menyimpan Script via Bot
+## ✨ Why AZBRY‑MD?
+> _“Not just another bot — it’s a vibe.”_
 
-Jika bot sudah online, kamu bisa langsung menyimpan salinan repository dengan perintah berikut:
+- ⚙️ **Modular & maintainable** — plugin‑based, gampang diatur.
+- 🧠 **Smart defaults** — config rapi, tanpa `.env` (pakai `config.js`).
+- 🚀 **Production ready** — cocok buat panel/VPS, auto‑restart friendly.
+- 💡 **Aesthetic** — README & UX bernuansa **Azbry** (dark + neon).
+
+---
+
+## 🧩 Quick Start (via Bot)
+Simpan source langsung **lewat bot**:
+
+```bash
+.gitclone <link-github>
 ```
-.gitclone https://github.com/vandebry10-star/AZBRY-MD
-```
-Perintah di atas akan mengunduh repository lengkap langsung ke dalam direktori kerja bot kamu.
+- Bot akan `git clone` ke server tempat bot jalan.
+- Pastikan link repo **public** atau aksesnya sudah diizinkan.
+
+> Tip: Untuk update, hapus folder lama atau gunakan `git pull` di folder repo.
 
 ---
 
-## ⚙️ Pengaturan Awal (config.js)
-
-File utama untuk konfigurasi bot adalah `config.js`.  
-Bagian-bagian penting yang **harus kamu ubah** sebelum menjalankan bot:
+## ⚙️ Konfigurasi Wajib (`config.js`)
+Tidak pakai `.env`. Semua kunci/owner dikelola lewat **`config.js`**.  
+**Yang wajib diubah:**
 
 ```js
-global.owner = ['628xxxxxxx'] // Nomor WhatsApp kamu (wajib diisi)
-global.mods  = ['628xxxxxxx'] // Nomor moderator (opsional, bisa sama dengan owner)
-global.prems = ['628xxxxxxx'] // Nomor pengguna premium (opsional)
-global.nameowner = 'Nama Kamu' // Nama tampil pemilik bot
-global.numberowner = '628xxxxxxx' // Nomor utama bot
-global.mail = 'emailkamu@gmail.com' // Email kontak
-global.gc = 'https://chat.whatsapp.com/...' // Link grup WhatsApp (jika ada)
-global.instagram = 'https://instagram.com/...' // Link Instagram (opsional)
-global.wm = '© AzbryMD' // Watermark
+global.owner        = ['6281510040802']       // WAJIB: daftar owner (tanpa @s.whatsapp.net)
+global.mods         = ['6281510040802']       // Opsional: moderator
+global.prems        = ['6281510040802']       // Opsional: premium default
+global.nameowner    = 'FebryWesker'           // Nama owner
+global.numberowner  = '6281510040802'         // Nomor owner (Indonesia pakai 62)
+global.mail         = 'support@azbry.dev'     // Email support (opsional)
+global.gc           = 'https://chat.whatsapp.com/...' // Link GC (opsional)
+global.instagram    = 'https://instagram.com/syfebry_' // Sosmed (opsional)
+global.wm           = '© AzbryMD'             // Watermark
+global.wait         = '🔎 AZBRY processing...'
+global.eror         = '🚨 Gagal memproses perintah.'
+global.stiker_wait  = 'Mengonversi media ke .webp...'
+
+// API Keys (contoh pakai BOTCAHX)
+global.btc          = 'ISI_APIKEY_KAMU'       // <-- UBAH!
+global.APIs         = { btc: 'https://api.botcahx.eu.org' }
+global.APIKeys      = { 'https://api.botcahx.eu.org': global.btc }
 ```
 
-### 📡 Tentang JID
-JID (*Jabber ID*) adalah **identitas unik WhatsApp** berbentuk `nomor@s.whatsapp.net` untuk user, dan `xxxx@g.us` untuk grup.  
-Contoh:
-- User JID: `6281510040802@s.whatsapp.net`
-- Grup JID: `120363112345678901@g.us`
-
-Beberapa plugin (misal auto-welcome, broadcast, atau reminder) akan menggunakan JID untuk mengirim pesan otomatis ke target tertentu.
+### 🔎 Tentang **JID**
+- **JID** = *WhatsApp ID* (format internal).
+- Untuk user: `628xxx@s.whatsapp.net`  
+- Untuk grup: `xxxx@g.us`  
+- Saat menyimpan ke database / whitelist, **gunakan JID format lengkap**.  
+- Untuk input command (seperti `.prem 628xxx|30`), script akan otomatis
+  mengubah ke JID yang benar.
 
 ---
 
-## 🚀 Menjalankan di Panel
-
-Pastikan kamu sudah memiliki **panel hosting (seperti HexelCloud, Render, Railway, dsb)** dan repository sudah di-clone.  
-Langkah-langkah eksekusi:
+## 🖥️ Deploy di Panel / VPS
+Jalankan urutan berikut setelah repo di‑clone:
 
 ```bash
 cd AZBRY-MD
@@ -95,25 +84,61 @@ npm i
 npm start
 ```
 
-Bot akan otomatis berjalan dan menampilkan QR Code untuk login ke akun WhatsApp.  
-Gunakan WhatsApp yang akan dijadikan bot untuk memindai QR Code tersebut.
+> **Catatan:**
+> - Minimal **Node.js 18+**
+> - Jika pakai PM2: `pm2 start npm --name "azbry-md" -- start`
+> - Pastikan port firewall & permission file sudah benar.
 
 ---
 
-## ❤️ Ucapan Terima Kasih
-
-Terima kasih kepada pihak-pihak yang telah berkontribusi pada pengembangan bot ini:
-
-- Allah SWT
-- [BOTCAHX (GitHub)](https://github.com/BOTCAHX)
-- Para pengguna yang terus mendukung dan menggunakan script ini 🙏
+## 📚 Struktur Kategori Menu (Urutan Bawah → Atas)
+- `info` (paling bawah)
+- `ai`
+- `downloader`
+- `sticker`
+- `game`
+- `fun`
+- `github`
+- `group`
+- `stalk`
+- `tools`
+- (kategori lain bebas)
+  
+Pengurutan ini sudah dipakai di `menu.js` & `menuall.js` dengan gaya **Azbry**.
 
 ---
 
-## 🌙 Penutup
+## ✅ Health Check
+- Cron jalan? `node-cron` terpasang & jadwal tervalidasi.
+- Welcome/bye? Pastikan **bridge listener** aktif & bot **admin grup**.
+- Premium? Data user tersimpan di `global.db.data.users` dengan `premium` dan `premiumTime`.
 
-**AZBRY-MD** diciptakan dengan tujuan sederhana: menghadirkan bot WhatsApp yang stabil, elegan, dan mudah dikembangkan.  
-Silakan modifikasi, eksplorasi, dan kembangkan versimu sendiri. Jadikan proyek ini titik awal kreativitasmu.  
+---
 
-> _“Made with ❤️ by FebryWesker | Azbry Project”_
+<div align="center">
 
+## 💠 SPECIAL THANKS
+
+> _Every masterpiece has its foundation._  
+> This one stands because of **<a href="https://github.com/BOTCAHX" target="_blank">BOTCAHX</a>** 🧠
+
+✨ Inspirasi, API, dan kontribusi mereka jadi fondasi penting dalam pengembangan **AZBRY‑MD** — dari struktur modular, integrasi API, hingga pendekatan _bot intelligence_ yang efisien.
+
+💎 *Respect to the creator who paved the path for the next generation of developers.*
+
+</div>
+
+---
+
+## 🧾 Lisensi
+Kode ini bersifat edukatif dan dapat dikembangkan bebas sesuai kebutuhan.  
+Tetap hargai **credit** dan **komunitas**.
+
+---
+
+<div align="center">
+
+**Crafted with pride by _FebryWesker_**  
+The Core of the **Azbry** System — Dark • Fast • Neon
+
+</div>
