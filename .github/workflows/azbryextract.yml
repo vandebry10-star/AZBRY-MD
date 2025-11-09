@@ -1,12 +1,13 @@
 name: Extract AZBRY-MD.zip
 
 on:
-  # jalan otomatis saat file ZIP berubah
+  workflow_dispatch:
   push:
     paths:
       - "AZBRY-MD.zip"
-  # bisa dijalankan manual dari tab Actions
-  workflow_dispatch: {}
+
+permissions:
+  contents: write  # memberi izin workflow untuk commit & push hasil ekstrak
 
 jobs:
   extract:
@@ -15,38 +16,29 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Ensure unzip is available
+      - name: Install unzip
+        run: sudo apt-get update && sudo apt-get install -y unzip
+
+      - name: Validate ZIP file
         run: |
-          sudo apt-get update
-          sudo apt-get install -y unzip
+          if [ ! -f AZBRY-MD.zip ]; then
+            echo "❌ File AZBRY-MD.zip tidak ditemukan di root repository."
+            exit 1
+          fi
 
-      - name: Validate ZIP
-        run: |
-          test -f AZBRY-MD.zip || (echo "AZBRY-MD.zip tidak ditemukan di root repo." && exit 1)
-
-      - name: Clean target folder
+      - name: Extract ZIP to folder
         run: |
           rm -rf extracted
           mkdir -p extracted
-
-      - name: Extract AZBRY-MD.zip -> extracted/
-        run: |
           unzip -q -o AZBRY-MD.zip -d extracted
-          echo "Isi diextract ke ./extracted"
+          echo "✅ Berhasil mengekstrak ke folder ./extracted"
+          ls -la extracted | head -n 200
 
-      # OPSIONAL: commit hasil ekstrak ke repo (folder ./extracted)
-      - name: Commit extracted files (optional)
-        if: ${{ github.event_name != 'pull_request' }}
+      - name: Commit extracted folder
         run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.email "actions@github.com"
+          git config --global user.name "github-actions[bot]"
           git add extracted
-          if git diff --cached --quiet; then
-            echo "Tidak ada perubahan untuk di-commit."
-          else
-            git commit -m "chore: extract AZBRY-MD.zip to ./extracted [skip ci]"
-            git push
-          fi
+          git commit -m "chore: extract AZBRY-MD.zip → ./extracted" || echo "⚙️ Tidak ada perubahan untuk dikomit."
+          git push
