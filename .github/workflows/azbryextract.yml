@@ -1,18 +1,38 @@
-- name: Move extracted/AZBRY-MD content to repo root
+name: Flatten extracted/AZBRY-MD to root
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'extracted/**'
+
+jobs:
+  flatten:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Move contents to repo root
         run: |
+          set -e
           if [ -d "extracted/AZBRY-MD" ]; then
-            echo "📦 Memindahkan isi extracted/AZBRY-MD ke root repo..."
+            echo "📦 Found extracted/AZBRY-MD — moving its contents to repo root…"
+            shopt -s dotglob nullglob
             mv extracted/AZBRY-MD/* .
+            # If there are nested folders inside, they were moved above.
+            # Clean up the empty parent directories:
             rm -rf extracted/AZBRY-MD
-            echo "✅ Selesai dipindahkan."
+            rmdir -p extracted 2>/dev/null || true
+            echo "✅ Move completed."
           else
-            echo "⚠️ Folder extracted/AZBRY-MD tidak ditemukan."
+            echo "⚠️ Folder extracted/AZBRY-MD not found. Nothing to do."
           fi
 
-      - name: Commit moved files
+      - name: Commit & push
         run: |
-          git config --global user.email "actions@github.com"
-          git config --global user.name "github-actions[bot]"
-          git add .
-          git commit -m "chore: move extracted/AZBRY-MD contents to root" || echo "⚙️ Tidak ada perubahan untuk dikomit."
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -m "chore: move extracted/AZBRY-MD contents to repo root" || echo "No changes to commit."
           git push
