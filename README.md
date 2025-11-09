@@ -1,8 +1,35 @@
-# 🌌 AZBRY-MD — WhatsApp Multi-Device Bot
+<div align="center">
 
-Selamat datang di **AZBRY-MD**, sebuah proyek WhatsApp bot modern berbasis *multi-device* yang dikembangkan oleh **FebryWesker** (Developer resmi Azbry Project).  
-Bot ini dibuat untuk memberikan pengalaman interaksi cerdas, stabil, dan mudah dikonfigurasi untuk berbagai kebutuhan — mulai dari hiburan, utilitas, hingga sistem otomatisasi WhatsApp pribadi.
+<img src="https://lunara.drizznesiasite.biz.id/f/4cXLIx.jpg?key=rCSo1f4LTX-CF0dzCMnHsA" width="700"/>
 
+# 🌌 **AZBRY-MD**
+### ⚙️ *Next-Generation WhatsApp Multi-Device Framework*
+
+> A fully modular, AI-powered bot core designed by **FebryWesker**  
+> for those who code not just to function — but to *create identity*.
+
+![GitHub repo size](https://img.shields.io/github/repo-size/vandebry10-star/AZBRY-MD?color=green)
+![GitHub license](https://img.shields.io/github/license/vandebry10-star/AZBRY-MD?color=blue)
+![GitHub stars](https://img.shields.io/github/stars/vandebry10-star/AZBRY-MD?color=yellow)
+![GitHub forks](https://img.shields.io/github/forks/vandebry10-star/AZBRY-MD?color=orange)
+![Node.js](https://img.shields.io/badge/Node.js-20.x-darkgreen?logo=node.js)
+
+</div>
+
+---
+
+## 🧠 **About AZBRY**
+
+> *“Forged in dark neon, powered by clean code.”*
+
+AZBRY-MD isn’t just another bot —  
+it’s the **central core** of the Azbry ecosystem —  
+a hybrid framework balancing **stability**, **aesthetics**, and **automation**.
+
+Designed with a **dark, neon-inspired architecture**,  
+every module follows Azbry’s global style — sharp, sleek, and alive.
+
+---
 ---
 
 ## 👤 Pengenalan Developer
