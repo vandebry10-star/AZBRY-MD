@@ -8,9 +8,8 @@ Designed for stability, clean structure, and a bold aesthetic.
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Runtime-Node.js_18+-informational?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Runtime-Node.js_20+-informational?style=for-the-badge">
   <img src="https://img.shields.io/badge/Platform-WhatsApp_MD-7A42F4?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Style-Azbry%20Neon-17ff46?style=for-the-badge">
 </p>
 
 ---
