@@ -1,10 +1,8 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/github/explore/main/topics/javascript/javascript.png" width="96" />
-
 # ⚡ AZBRY‑MD — WhatsApp Multi‑Device Bot
 
-**Dark • Fast • Neon** — Built by **FebryWesker** for the **Azbry** ecosystem.  
+**Dark • Fast •** — Built by **FebryWesker** for the **Azbry** ecosystem.  
 Designed for stability, clean structure, and a bold aesthetic.
 
 </div>
@@ -85,26 +83,9 @@ npm start
 ```
 
 > **Catatan:**
-> - Minimal **Node.js 18+**
+> - Minimal **Node.js 20+**
 > - Jika pakai PM2: `pm2 start npm --name "azbry-md" -- start`
 > - Pastikan port firewall & permission file sudah benar.
-
----
-
-## 📚 Struktur Kategori Menu (Urutan Bawah → Atas)
-- `info` (paling bawah)
-- `ai`
-- `downloader`
-- `sticker`
-- `game`
-- `fun`
-- `github`
-- `group`
-- `stalk`
-- `tools`
-- (kategori lain bebas)
-  
-Pengurutan ini sudah dipakai di `menu.js` & `menuall.js` dengan gaya **Azbry**.
 
 ---
 
@@ -120,7 +101,7 @@ Pengurutan ini sudah dipakai di `menu.js` & `menuall.js` dengan gaya **Azbry**.
 ## 💠 SPECIAL THANKS
 
 > _Every masterpiece has its foundation._  
-> This one stands because of **<a href="https://github.com/BOTCAHX" target="_blank">BOTCAHX</a>** 🧠
+> This one stands because of **<a href="https://github.com/BOTCAHX" target="_blank">BOTCAHX</a>** 
 
 ✨ Inspirasi, API, dan kontribusi mereka jadi fondasi penting dalam pengembangan **AZBRY‑MD** — dari struktur modular, integrasi API, hingga pendekatan _bot intelligence_ yang efisien.
 
@@ -139,6 +120,6 @@ Tetap hargai **credit** dan **komunitas**.
 <div align="center">
 
 **Crafted with pride by _FebryWesker_**  
-The Core of the **Azbry** System — Dark • Fast • Neon
+The Core of the **Azbry-MD**
 
 </div>
