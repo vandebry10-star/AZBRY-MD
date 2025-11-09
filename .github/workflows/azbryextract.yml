@@ -1,44 +1,18 @@
-name: Extract AZBRY-MD.zip
-
-on:
-  workflow_dispatch:
-  push:
-    paths:
-      - "AZBRY-MD.zip"
-
-permissions:
-  contents: write  # memberi izin workflow untuk commit & push hasil ekstrak
-
-jobs:
-  extract:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Install unzip
-        run: sudo apt-get update && sudo apt-get install -y unzip
-
-      - name: Validate ZIP file
+- name: Move extracted/AZBRY-MD content to repo root
         run: |
-          if [ ! -f AZBRY-MD.zip ]; then
-            echo "❌ File AZBRY-MD.zip tidak ditemukan di root repository."
-            exit 1
+          if [ -d "extracted/AZBRY-MD" ]; then
+            echo "📦 Memindahkan isi extracted/AZBRY-MD ke root repo..."
+            mv extracted/AZBRY-MD/* .
+            rm -rf extracted/AZBRY-MD
+            echo "✅ Selesai dipindahkan."
+          else
+            echo "⚠️ Folder extracted/AZBRY-MD tidak ditemukan."
           fi
 
-      - name: Extract ZIP to folder
-        run: |
-          rm -rf extracted
-          mkdir -p extracted
-          unzip -q -o AZBRY-MD.zip -d extracted
-          echo "✅ Berhasil mengekstrak ke folder ./extracted"
-          ls -la extracted | head -n 200
-
-      - name: Commit extracted folder
+      - name: Commit moved files
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "github-actions[bot]"
-          git add extracted
-          git commit -m "chore: extract AZBRY-MD.zip → ./extracted" || echo "⚙️ Tidak ada perubahan untuk dikomit."
+          git add .
+          git commit -m "chore: move extracted/AZBRY-MD contents to root" || echo "⚙️ Tidak ada perubahan untuk dikomit."
           git push
