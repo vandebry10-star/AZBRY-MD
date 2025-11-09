@@ -1,10 +1,10 @@
-name: Extract Azbry-MD.zip
+name: Extract AZBRY-MD.zip
 
 on:
   # jalan otomatis saat file ZIP berubah
   push:
     paths:
-      - "Azbry-MD.zip"
+      - "AZBRY-MD.zip"
   # bisa dijalankan manual dari tab Actions
   workflow_dispatch: {}
 
@@ -25,16 +25,16 @@ jobs:
 
       - name: Validate ZIP
         run: |
-          test -f Azbry-MD.zip || (echo "Azbry-MD.zip tidak ditemukan di root repo." && exit 1)
+          test -f AZBRY-MD.zip || (echo "AZBRY-MD.zip tidak ditemukan di root repo." && exit 1)
 
       - name: Clean target folder
         run: |
           rm -rf extracted
           mkdir -p extracted
 
-      - name: Extract Azbry-MD.zip -> extracted/
+      - name: Extract AZBRY-MD.zip -> extracted/
         run: |
-          unzip -q -o Azbry-MD.zip -d extracted
+          unzip -q -o AZBRY-MD.zip -d extracted
           echo "Isi diextract ke ./extracted"
 
       # OPSIONAL: commit hasil ekstrak ke repo (folder ./extracted)
@@ -47,6 +47,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Tidak ada perubahan untuk di-commit."
           else
-            git commit -m "chore: extract Azbry-MD.zip to ./extracted [skip ci]"
+            git commit -m "chore: extract AZBRY-MD.zip to ./extracted [skip ci]"
             git push
           fi
