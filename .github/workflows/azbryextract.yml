@@ -1,38 +1,42 @@
-name: Flatten extracted/AZBRY-MD to root
+name: Move extracted/AZBRY-MD contents to root
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - 'extracted/**'
+
+permissions:
+  contents: write
 
 jobs:
-  flatten:
+  move:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Move contents to repo root
+      - name: Move extracted/AZBRY-MD contents
         run: |
           set -e
           if [ -d "extracted/AZBRY-MD" ]; then
-            echo "📦 Found extracted/AZBRY-MD — moving its contents to repo root…"
+            echo "📦 Found folder extracted/AZBRY-MD — moving contents..."
             shopt -s dotglob nullglob
             mv extracted/AZBRY-MD/* .
-            # If there are nested folders inside, they were moved above.
-            # Clean up the empty parent directories:
             rm -rf extracted/AZBRY-MD
-            rmdir -p extracted 2>/dev/null || true
-            echo "✅ Move completed."
+            echo "✅ Done moving files to root."
           else
-            echo "⚠️ Folder extracted/AZBRY-MD not found. Nothing to do."
+            echo "⚠️ Folder extracted/AZBRY-MD not found. Nothing to move."
           fi
 
-      - name: Commit & push
+      - name: Commit and push changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "actions@github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "actions@github.com"
           git add -A
-          git commit -m "chore: move extracted/AZBRY-MD contents to repo root" || echo "No changes to commit."
-          git push
+          if git diff --cached --quiet; then
+            echo "🟡 No changes to commit."
+          else
+            git commit -m "chore: moved extracted/AZBRY-MD contents to root"
+            git push origin main
+            echo "✅ Changes committed and pushed."
+          fi
