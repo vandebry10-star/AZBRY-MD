@@ -1,0 +1,44 @@
+{
+  "120363422223291218@g.us": {
+    "isBanned": true,
+    "welcome": true,
+    "antiLink": false,
+    "delete": false,
+    "detect": false,
+    "expired": 0,
+    "descUpdate": false,
+    "stiker": true,
+    "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
+    "sBye": "Selamat tinggal @user!",
+    "sPromote": "",
+    "sDemote": ""
+  },
+  "120363223215703033@g.us": {
+    "isBanned": false,
+    "welcome": true,
+    "antiLink": false,
+    "delete": false,
+    "detect": false,
+    "expired": 0,
+    "descUpdate": false,
+    "stiker": false,
+    "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
+    "sBye": "Selamat tinggal @user!",
+    "sPromote": "",
+    "sDemote": ""
+  },
+  "120363402805216967@g.us": {
+    "isBanned": true,
+    "welcome": true,
+    "antiLink": false,
+    "delete": false,
+    "detect": false,
+    "expired": 0,
+    "descUpdate": false,
+    "stiker": false,
+    "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
+    "sBye": "Selamat tinggal @user!",
+    "sPromote": "",
+    "sDemote": ""
+  }
+}
