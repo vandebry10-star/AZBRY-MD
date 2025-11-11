@@ -1,0 +1,79 @@
+name: Restore Plugins from ZIP
+
+on:
+  # 1) Jalan otomatis kalau ada ZIP backup baru di repo
+  push:
+    paths:
+      - '*.zip'
+  # 2) Bisa dijalankan manual, pilih ZIP-nya
+  workflow_dispatch:
+    inputs:
+      zip_path:
+        description: 'Path ZIP di repo (contoh: BackupPlugins_2025-11-11T06-20-45-678Z.zip)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write   # biar bisa commit & push balik ke repo
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Tentukan file ZIP yang dipakai
+        id: pick
+        run: |
+          # Jika dipanggil manual & zip_path diisi, pakai itu
+          if [ -n "${{ github.event.inputs.zip_path }}" ]; then
+            ZIP="${{ github.event.inputs.zip_path }}"
+          else
+            # Kalau trigger karena push ZIP, pakai file yang berubah itu
+            # atau cari ZIP terbaru di root repo yang cocok pola BackupPlugins_*.zip
+            ZIP="$(git diff --name-only HEAD~1 HEAD | grep -E '\.zip$' || true)"
+            if [ -z "$ZIP" ]; then
+              ZIP="$(ls -t BackupPlugins_*.zip 2>/dev/null | head -n 1 || true)"
+            fi
+          fi
+
+          if [ -z "$ZIP" ] || [ ! -f "$ZIP" ]; then
+            echo "❌ ZIP tidak ditemukan. Pastikan file ada di root repo atau isi input zip_path."
+            exit 1
+          fi
+
+          echo "ZIP=$ZIP" >> $GITHUB_OUTPUT
+          echo "Pakai ZIP: $ZIP"
+
+      - name: Siapkan folder plugins/
+        run: |
+          mkdir -p plugins
+          echo "Isi plugins sebelum ekstrak:"
+          ls -la plugins || true
+
+      - name: Ekstrak ZIP ke plugins/
+        run: |
+          unzip -o "${{ steps.pick.outputs.ZIP }}" -d plugins/
+          echo "Isi plugins sesudah ekstrak:"
+          ls -la plugins || true
+
+      - name: Cek perubahan
+        id: diff
+        run: |
+          if git status --porcelain | grep -q '^ M\|^??\|^ D'; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit & Push (jika ada perubahan)
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add plugins/
+          git commit -m "Restore plugins from ${{ steps.pick.outputs.ZIP }}"
+          git push
