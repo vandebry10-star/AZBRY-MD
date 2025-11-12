@@ -176,7 +176,7 @@ Kami juga membuka jasa pembuatan website profesional, baik untuk keperluan priba
 - Panduan singkat penggunaan hasil akhir.  
 
 ---
-
+<div align="center">
 ## ⚠️ Catatan
 Pastikan kamu menyediakan akses (panel, SSH, atau file) yang dibutuhkan sebelum pengerjaan.  
 Backup data kamu selalu disarankan sebelum instalasi atau modifikasi sistem.
