@@ -79,10 +79,10 @@ global.APIKeys      = { 'https://api.botcahx.eu.org': global.btc }
 Jalankan urutan berikut setelah repo di‑clone:
 
 ```bash
-cd AZBRY-MD
-npm i node-cron
-npm i
-npm start
+cd AZBRY-MD <<< setelah ini langsung lanjut 🔽
+npm i node-cron <<< tunggu sekitar 3 menit
+npm i <<< tunggu sekitar 3 menit (kalau ini belum kelar bot tidak berfungsi dengan baik)
+npm start <<< tunggu sampai diminta memasukkan nomor bot (awalan 628xx)
 ```
 
 > **Catatan:**
