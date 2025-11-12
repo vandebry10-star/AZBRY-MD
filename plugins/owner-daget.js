@@ -62,7 +62,7 @@ module.exports = async (m, { conn, args, isOwner }) => {
     const mentions = sample
     await sleep(ROUND_DELAY_MS * i) // makin lama tiap putaran
     await conn.sendMessage(m.chat, {
-      text: `🎰 *Putaran ${i}/${ROUNDS}*\n\nYang masih berpeluang menang:\n${daftar}\n\n(putaran selanjutnya...)`,
+      text: `🎰 *Putaran ${i}/${ROUNDS}*\n\nYang berpeluang menang:\n${daftar}\n\n(putaran selanjutnya...)`,
       mentions
     })
   }
@@ -81,7 +81,7 @@ module.exports = async (m, { conn, args, isOwner }) => {
 
   const msg = 
 `┏━━━━━━━━━━━━━━━━━━━━━┓
-┃  🎉  PEMENANG GIVEAWAY  🎉
+┃  🎉  PEMENANG DAGET  🎉
 ┗━━━━━━━━━━━━━━━━━━━━━┛
 
 Selamat *@${winner.split('@')[0]}* 🎊
