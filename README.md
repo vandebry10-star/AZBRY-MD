@@ -1,21 +1,25 @@
 <div align="center">
 
-# ⚡ AZBRY‑MD — WhatsApp Multi‑Device Bot
+<a href="https://github.com/FebryWesker">
+  <img src="https://telegra.ph/file/9573fbb1e29f613a965dd-259818f35b54c31127.jpg?size=120" width="120" height="120" style="border-radius:50%;" alt="FebryWesker Profile"/>
+</a>
 
-**Dark • Fast •** — Built by **FebryWesker** for the **Azbry** ecosystem.  
+# ⚡ AZBRY-MD — WhatsApp Multi-Device Bot
+
+Built by **FebryWesker** for the **Azbry** System.  
 Designed for stability, clean structure, and a bold aesthetic.
-
-</div>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Runtime-Node.js_20+-informational?style=for-the-badge">
   <img src="https://img.shields.io/badge/Platform-WhatsApp_MD-7A42F4?style=for-the-badge">
 </p>
 
+</div>
+
 ---
 
 ## ✨ Why AZBRY‑MD?
-> _“Not just another bot — it’s a vibe.”_
+> _“Bukan bot biasa, (katanya)”_
 
 - ⚙️ **Modular & maintainable** — plugin‑based, gampang diatur.
 - 🧠 **Smart defaults** — config rapi, tanpa `.env` (pakai `config.js`).
@@ -42,14 +46,14 @@ Tidak pakai `.env`. Semua kunci/owner dikelola lewat **`config.js`**.
 **Yang wajib diubah:**
 
 ```js
-global.owner        = ['6281510040802']       // WAJIB: daftar owner (tanpa @s.whatsapp.net)
-global.mods         = ['6281510040802']       // Opsional: moderator
-global.prems        = ['6281510040802']       // Opsional: premium default
+global.owner        = ['628xxxxxxxxxx']       // WAJIB: daftar owner (tanpa @s.whatsapp.net)
+global.mods         = ['628xxxxxxxxxx']       // Opsional: moderator
+global.prems        = ['628xxxxxxxxxx']       // Opsional: premium default
 global.nameowner    = 'FebryWesker'           // Nama owner
-global.numberowner  = '6281510040802'         // Nomor owner (Indonesia pakai 62)
+global.numberowner  = '628xxxxxxxxxxx']'         // Nomor owner (Indonesia pakai 62)
 global.mail         = 'support@azbry.dev'     // Email support (opsional)
 global.gc           = 'https://chat.whatsapp.com/...' // Link GC (opsional)
-global.instagram    = 'https://instagram.com/syfebry_' // Sosmed (opsional)
+global.instagram    = 'https://instagram.com/username' // Sosmed (opsional)
 global.wm           = '© AzbryMD'             // Watermark
 global.wait         = '🔎 AZBRY processing...'
 global.eror         = '🚨 Gagal memproses perintah.'
@@ -88,25 +92,105 @@ npm start
 
 ---
 
-## ✅ Health Check
-- Cron jalan? `node-cron` terpasang & jadwal tervalidasi.
-- Welcome/bye? Pastikan **bridge listener** aktif & bot **admin grup**.
-- Premium? Data user tersimpan di `global.db.data.users` dengan `premium` dan `premiumTime`.
+## 🧩 Dependencies
+
+Pastikan semua komponen berikut sudah terinstal di server/panel kamu:
+```
+- FFmpeg
+- ImageMagick
+- Python3
+- python3-pip
+- Puppeteer
+- Chromium
+- PM2
+- Node.js (NPM)
+- Yarn
+- speedtest-net
+- DLL & Library tambahan
+```
 
 ---
 
 <div align="center">
+  
+## ⚠️ Risiko
+# Jika salah satu tidak terpasang, bot bisa error atau fitur tertentu tidak berfungsi dengan benar.
+
+---
 
 ## 💠 SPECIAL THANKS
 
 > _Every masterpiece has its foundation._  
-> This one stands because of **<a href="https://github.com/BOTCAHX" target="_blank">BOTCAHX</a>** 
+> This one stands tall because of the brilliance and dedication of:
 
-✨ Inspirasi, API, dan kontribusi mereka jadi fondasi penting dalam pengembangan **AZBRY‑MD** — dari struktur modular, integrasi API, hingga pendekatan _bot intelligence_ yang efisien.
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/BOTCAHX">
+        <img src="https://github.com/BOTCAHX.png?size=100" width="100" height="100" alt="BOTCAHX"/>
+        <br />
+        <sub><b>Tio</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+✨ Inspirasi, API, dan kontribusi mereka jadi fondasi penting dalam pengembangan **AZBRY-MD**. dari struktur modular, integrasi API, hingga pendekatan *bot intelligence* yang efisien.  
 
 💎 *Respect to the creator who paved the path for the next generation of developers.*
 
-</div>
+
+---
+
+---
+
+---
+
+# ✨ Layanan Kami
+
+## 🔧 Layanan Bot (Azbry-MD / Bot Lain)
+Kami menyediakan berbagai jasa profesional seputar pengelolaan dan pengembangan bot:
+
+- ⚙️ **Pasang SC di panel sampai jadi** — instalasi script, setup environment, dan testing hingga bot aktif sepenuhnya.  
+- 🧩 **Edit `config.js`** — sesuaikan konfigurasi, token, prefix, API key, dan pengaturan lainnya.  
+- 💻 **Edit / modifikasi source code (SC)** — kustomisasi fitur, perintah, dan tampilan bot sesuai kebutuhan.  
+- 🔌 **Menambahkan plugin baru** — integrasi fitur tambahan ke dalam bot.  
+- 🧠 **Mengedit plugin lama** — optimasi atau ubah fungsi plugin biar lebih efisien.  
+- 🛠️ **Jasa bot lainnya** — termasuk debugging, optimasi performa, setup auto-restart (PM2), dan integrasi API eksternal.  
+
+---
+
+## 🌐 Layanan Web
+Kami juga membuka jasa pembuatan website profesional, baik untuk keperluan pribadi maupun bisnis:
+
+- 🖥️ **Web portofolio** — desain elegan untuk menampilkan karya, identitas, dan profil kamu.  
+- 💼 **Project web custom** — landing page, web app ringan, atau sistem sederhana sesuai permintaan.  
+- 🔄 **Maintenance & update** — perbaikan, pembaruan konten, atau deploy ulang.  
+
+---
+
+## ✅ Keunggulan
+- Penjelasan dan konfirmasi scope kerja sebelum mulai.  
+- Backup file (jika tersedia) sebelum dilakukan perubahan.  
+- Testing penuh setelah pekerjaan selesai.  
+- Panduan singkat penggunaan hasil akhir.  
+
+---
+
+## ⚠️ Catatan
+Pastikan kamu menyediakan akses (panel, SSH, atau file) yang dibutuhkan sebelum pengerjaan.  
+Backup data kamu selalu disarankan sebelum instalasi atau modifikasi sistem.
+
+---
+
+## 💬 Hubungi CS
+
+Butuh bantuan atau mau order jasa?  
+Klik tombol di bawah untuk langsung chat via WhatsApp 👇  
+
+<a href="https://wa.me/6281510040802" target="_blank">
+  <img src="https://img.shields.io/badge/Chat%20CS%20WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
+</a>
 
 ---
 
