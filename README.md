@@ -139,7 +139,7 @@ Pastikan semua komponen berikut sudah terinstal di server/panel kamu:
 
 💎 *Respect to the creator who paved the path for the next generation of developers.*
 
-
+</div>
 ---
 
 ---
