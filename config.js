@@ -21,8 +21,8 @@ global.gcspam = false // Set true/false untuk menutup grup ketika spam (default:
     
 
 // APIKEY INI WAJIB DI ISI! //
-global.btc = 'bijikepala67'
-global.aksesKey = 'LR9NCSdJ'
+global.btc = 'ISI_APIKEYLU'
+global.aksesKey = 'ISI_AKSESKEYLU' //<<< OPSIONAL
 // Daftar terlebih dahulu https://api.botcahx.eu.org
 
 
