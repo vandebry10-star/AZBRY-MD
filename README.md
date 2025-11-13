@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://github.com/vandebry10-star">
-  <img src="https://telegra.ph/file/9573fbb1e29f613a965dd-259818f35b54c31127.jpg?size=120" width="120" height="120" style="border-radius:50%;" alt="FebryWesker Profile"/>
+  <img src="https://imgkub.com/images/2025/11/13/image.jpg?size=400" width="400" height="400" style="border-radius:50%;" alt="FebryWesker Profile"/>
 </a>
 
 # ⚡ AZBRY-MD — WhatsApp Multi-Device Bot
@@ -25,6 +25,18 @@ Designed for stability, clean structure, and a bold aesthetic.
 - 🧠 **Smart defaults** — config rapi, tanpa `.env` (pakai `config.js`).
 - 🚀 **Production ready** — cocok buat panel/VPS, auto‑restart friendly.
 - 💡 **Aesthetic** — README & UX bernuansa **Azbry** (dark + neon).
+
+---
+
+## Developer Portofolio
+
+<div align="center">
+
+<a href="https://febrywesker-portofolio.vercel.app/" target="_blank">
+  <img src="https://img.shields.io/badge/VISIT%20PORTOFOLIO-00CC88?style=for-the-badge&logo=vercel&logoColor=white&labelColor=111&size=large" width="260" height="60" />
+</a>
+
+</div>
 
 ---
 
