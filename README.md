@@ -136,6 +136,10 @@ npm i <<< tunggu sekitar 3 menit (kalau ini belum kelar bot tidak berfungsi deng
 ```npm start <<< tunggu sampai diminta memasukkan nomor bot (awalan 628xx)
 ```
 
+---
+
+```
+
 > **Catatan:**
 > - Minimal **Node.js 20+**
 > - Jika pakai PM2: `pm2 start npm --name "azbry-md" -- start`
