@@ -1343,18 +1343,30 @@ Untuk mematikan fitur ini, ketik
 
 global.dfail = (type, m, conn) => {
     let msg = {
-  rowner: '🚨 *AKSES DITOLAK!* Perintah ini hanya dapat dijalankan oleh 🔱 _*FEBRY!*_ (Root Owner).',
-  owner: '🚨 *AKSES DITOLAK!* Hanya _*FEBRY!*_ yang berhak menggunakan perintah ini!',
-  mods: '🧩 *KHUSUS MODERATOR!* Perintah ini hanya untuk _*Moderator Resmi*_ bot.',
-  premium: '💎 *PREMIUM USER ONLY!* Fitur ini hanya untuk member _*Premium*_ aktif.\n\n✨ Upgrade dengan perintah *.prem* untuk mendapatkan akses penuh.',
-  group: '👥 *MODE GRUP!* Perintah ini hanya dapat digunakan di dalam *grup*, bukan chat pribadi.',
-  private: '📩 *MODE PRIVATE!* Jalankan perintah ini di *Chat Pribadi Bot*, bukan di grup.',
-  admin: '🛠️ *ADMIN ONLY!* Perintah ini hanya bisa dijalankan oleh *Admin Grup*.',
-  botAdmin: '🤖 *BOT BUKAN ADMIN!* Jadikan bot sebagai *Admin Grup* terlebih dahulu agar fitur ini bisa digunakan.',
-  unreg: '📝 *BELUM TERDAFTAR!* Silakan daftar dulu untuk menggunakan fitur ini.\n\nKetik:\n*#daftar nama.umur*\n\nContoh:\n*#daftar Febry.16*',
-  restrict: '🚫 *FITUR DINONAKTIFKAN!* Fitur ini sedang dimatikan langsung oleh *FEBRY!* untuk alasan keamanan.'
-}[type]
-if (msg) return m.reply(msg)
+        rowner: '🚨 *AKSES DITOLAK!* Perintah ini hanya untuk *Root Owner* (Developer Utama).',
+        
+        owner: '🚨 *OWNER ONLY!* Perintah ini hanya dapat dijalankan oleh *Owner Bot* yang terdaftar.',
+
+        mods: '🧩 *KHUSUS MODERATOR!* Perintah ini hanya untuk Moderator resmi bot.',
+        
+        premium: '💎 *PREMIUM ONLY!* Fitur ini hanya untuk pengguna premium.\n\nUpgrade dengan *.prem* untuk akses penuh.',
+        
+        group: '👥 *MODE GRUP!* Jalankan perintah ini di dalam grup.',
+        
+        private: '📩 *MODE PRIVATE!* Jalankan perintah ini di chat pribadi bot.',
+        
+        admin: '🛠️ *ADMIN ONLY!* Hanya Admin Grup yang dapat menggunakan perintah ini.',
+        
+        botAdmin: '🤖 *BOT BUKAN ADMIN!* Jadikan bot sebagai Admin Grup terlebih dahulu.',
+        
+        unreg: '📝 *BELUM TERDAFTAR!* Silakan daftar untuk menggunakan fitur ini.\nKetik:\n*.daftar nama|umur*',
+        
+        restrict: '🚫 *FITUR DIMATIKAN!* Fitur ini sedang dinonaktifkan oleh Root Owner.'
+    }[type]
+
+    if (msg) {
+        return m.reply(msg + '\n\n— *Developed by FebryWesker* (dev resmi)')
+    }
 }
 
 let fs = require('fs')
