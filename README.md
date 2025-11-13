@@ -133,7 +133,8 @@ npm i <<< tunggu sekitar 3 menit (kalau ini belum kelar bot tidak berfungsi deng
 
 </div>
 
-```npm start <<< tunggu sampai diminta memasukkan nomor bot (awalan 628xx)
+```attention
+npm start <<< tunggu sampai diminta memasukkan nomor bot (awalan 628xx)
 ```
 
 ---
