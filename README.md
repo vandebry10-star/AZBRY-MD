@@ -124,7 +124,7 @@ npm i <<< tunggu sekitar 3 menit (kalau ini belum kelar bot tidak berfungsi deng
 <td>
   <img 
     src="https://imgkub.com/images/2025/11/13/image27bbde1ea5870eb3.jpg" 
-    width="240" 
+    width="200" 
     style="border: 4px solid #444; border-radius: 10px;">
 </td>
 
@@ -135,6 +135,8 @@ npm i <<< tunggu sekitar 3 menit (kalau ini belum kelar bot tidak berfungsi deng
 
 ```attention
 npm start <<< tunggu sampai diminta memasukkan nomor bot (awalan 628xx)
+
+setelah itu akan diberi code pairing dan connect di WhatsApp: Home » Perangkat Tertaut
 ```
 
 ---
