@@ -25,6 +25,31 @@ Designed for stability, clean structure, and a bold aesthetic.
 - 🧠 **Smart defaults** — config rapi, tanpa `.env` (pakai `config.js`).
 - 🚀 **Production ready** — cocok buat panel/VPS, auto‑restart friendly.
 - 💡 **Aesthetic** — README & UX bernuansa **Azbry** (dark + neon).
+---
+
+<div align="center">
+
+<table>
+<tr>
+
+<td>
+  <img 
+    src="https://imgkub.com/images/2025/11/13/image9574ffca2d5bcb46.jpg" 
+    width="240" 
+    style="border: 4px solid #444; border-radius: 10px;">
+</td>
+
+<td>
+  <img 
+    src="https://imgkub.com/images/2025/11/13/image2ffabc8c1ddc1415.jpg" 
+    width="240" 
+    style="border: 4px solid #444; border-radius: 10px;">
+</td>
+
+</tr>
+</table>
+
+</div>
 
 ---
 
