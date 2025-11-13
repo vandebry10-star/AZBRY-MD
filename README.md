@@ -19,7 +19,7 @@ Designed for stability, clean structure, and a bold aesthetic.
 ---
 
 ## ✨ Why AZBRY‑MD?
-> _“Bukan bot biasa, (katanya)”_
+> _“Simple, multifungsi, Free”_
 
 - ⚙️ **Modular & maintainable** — plugin‑based, gampang diatur.
 - 🧠 **Smart defaults** — config rapi, tanpa `.env` (pakai `config.js`).
@@ -119,6 +119,18 @@ Jalankan urutan berikut setelah repo di‑clone:
 cd AZBRY-MD <<< setelah ini langsung lanjut 🔽
 npm i node-cron <<< tunggu sekitar 3 menit
 npm i <<< tunggu sekitar 3 menit (kalau ini belum kelar bot tidak berfungsi dengan baik)
+# Setelah npm install tampilan panel harus seperti ini:
+<td>
+  <img 
+    src="https://imgkub.com/images/2025/11/13/image27bbde1ea5870eb3.jpg" 
+    width="240" 
+    style="border: 4px solid #444; border-radius: 10px;">
+</td>
+
+</tr>
+</table>
+
+</div>
 npm start <<< tunggu sampai diminta memasukkan nomor bot (awalan 628xx)
 ```
 
