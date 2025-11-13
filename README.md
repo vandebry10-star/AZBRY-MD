@@ -120,7 +120,7 @@ cd AZBRY-MD <<< setelah ini langsung lanjut 🔽
 npm i node-cron <<< tunggu sekitar 3 menit
 npm i <<< tunggu sekitar 3 menit (kalau ini belum kelar bot tidak berfungsi dengan baik)
 ```
-# Setelah npm install tampilan panel harus seperti ini:
+## Setelah npm install tampilan panel harus seperti ini:
 <td>
   <img 
     src="https://imgkub.com/images/2025/11/13/image27bbde1ea5870eb3.jpg" 
@@ -132,8 +132,8 @@ npm i <<< tunggu sekitar 3 menit (kalau ini belum kelar bot tidak berfungsi deng
 </table>
 
 </div>
-```
-npm start <<< tunggu sampai diminta memasukkan nomor bot (awalan 628xx)
+
+```npm start <<< tunggu sampai diminta memasukkan nomor bot (awalan 628xx)
 ```
 
 > **Catatan:**
