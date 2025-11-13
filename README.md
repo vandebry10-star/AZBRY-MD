@@ -141,7 +141,7 @@ setelah itu akan diberi code pairing dan connect di WhatsApp: Home » Perangkat 
 
 ---
 
-```
+```bash
 
 > **Catatan:**
 > - Minimal **Node.js 20+**
