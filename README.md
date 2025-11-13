@@ -4,7 +4,7 @@
   <img src="https://imgkub.com/images/2025/11/13/image.jpg?size=400" width="400" height="400" style="border-radius:50%;" alt="FebryWesker Profile"/>
 </a>
 
-# âš¡ AZBRY-MD â€” WhatsApp Multi-Device Bot
+# ⚡ AZBRY-MD — WhatsApp Multi-Device Bot
 
 Built by **FebryWesker** for the **Azbry** System.  
 Designed for stability, clean structure, and a bold aesthetic.
@@ -18,13 +18,13 @@ Designed for stability, clean structure, and a bold aesthetic.
 
 ---
 
-## âœ¨ Why AZBRYâ€‘MD?
-> _â€œBukan bot biasa, (katanya)â€_
+## ✨ Why AZBRY‑MD?
+> _“Bukan bot biasa, (katanya)”_
 
-- âš™ï¸ **Modular & maintainable** â€” pluginâ€‘based, gampang diatur.
-- ðŸ§  **Smart defaults** â€” config rapi, tanpa `.env` (pakai `config.js`).
-- ðŸš€ **Production ready** â€” cocok buat panel/VPS, autoâ€‘restart friendly.
-- ðŸ’¡ **Aesthetic** â€” README & UX bernuansa **Azbry** (dark + neon).
+- ⚙️ **Modular & maintainable** — plugin‑based, gampang diatur.
+- 🧠 **Smart defaults** — config rapi, tanpa `.env` (pakai `config.js`).
+- 🚀 **Production ready** — cocok buat panel/VPS, auto‑restart friendly.
+- 💡 **Aesthetic** — README & UX bernuansa **Azbry** (dark + neon).
 ---
 
 <div align="center">
@@ -65,7 +65,7 @@ Designed for stability, clean structure, and a bold aesthetic.
 
 ---
 
-## ðŸ§© Quick Start (via Bot)
+## 🧩 Quick Start (via Bot)
 Simpan source langsung **lewat bot**:
 
 ```bash
@@ -78,7 +78,7 @@ Simpan source langsung **lewat bot**:
 
 ---
 
-## âš™ï¸ Konfigurasi Wajib (`config.js`)
+## ⚙️ Konfigurasi Wajib (`config.js`)
 Tidak pakai `.env`. Semua kunci/owner dikelola lewat **`config.js`**.  
 **Yang wajib diubah:**
 
@@ -91,9 +91,9 @@ global.numberowner  = '628xxxxxxxxxxx']'         // Nomor owner (Indonesia pakai
 global.mail         = 'support@azbry.dev'     // Email support (opsional)
 global.gc           = 'https://chat.whatsapp.com/...' // Link GC (opsional)
 global.instagram    = 'https://instagram.com/username' // Sosmed (opsional)
-global.wm           = 'Â© AzbryMD'             // Watermark
-global.wait         = 'ðŸ”Ž AZBRY processing...'
-global.eror         = 'ðŸš¨ Gagal memproses perintah.'
+global.wm           = '© AzbryMD'             // Watermark
+global.wait         = '🔎 AZBRY processing...'
+global.eror         = '🚨 Gagal memproses perintah.'
 global.stiker_wait  = 'Mengonversi media ke .webp...'
 
 // API Keys (contoh pakai BOTCAHX)
@@ -102,7 +102,7 @@ global.APIs         = { btc: 'https://api.botcahx.eu.org' }
 global.APIKeys      = { 'https://api.botcahx.eu.org': global.btc }
 ```
 
-### ðŸ”Ž Tentang **JID**
+### 🔎 Tentang **JID**
 - **JID** = *WhatsApp ID* (format internal).
 - Untuk user: `628xxx@s.whatsapp.net`  
 - Untuk grup: `xxxx@g.us`  
@@ -112,11 +112,11 @@ global.APIKeys      = { 'https://api.botcahx.eu.org': global.btc }
 
 ---
 
-## ðŸ–¥ï¸ Deploy di Panel / VPS
-Jalankan urutan berikut setelah repo diâ€‘clone:
+## 🖥️ Deploy di Panel / VPS
+Jalankan urutan berikut setelah repo di‑clone:
 
 ```bash
-cd AZBRY-MD <<< setelah ini langsung lanjut ðŸ”½
+cd AZBRY-MD <<< setelah ini langsung lanjut 🔽
 npm i node-cron <<< tunggu sekitar 3 menit
 npm i <<< tunggu sekitar 3 menit (kalau ini belum kelar bot tidak berfungsi dengan baik)
 npm start <<< tunggu sampai diminta memasukkan nomor bot (awalan 628xx)
@@ -129,7 +129,7 @@ npm start <<< tunggu sampai diminta memasukkan nomor bot (awalan 628xx)
 
 ---
 
-## ðŸ§© Dependencies
+## 🧩 Dependencies
 
 Pastikan semua komponen berikut sudah terinstal di server/panel kamu:
 ```
@@ -148,7 +148,7 @@ Pastikan semua komponen berikut sudah terinstal di server/panel kamu:
 
 ---
 
-> ### ðŸ”’ Edit Menu & MenuAll
+> ### 🔒 Edit Menu & MenuAll
 > Beberapa bagian bot seperti **isi menu (`.menu`) dan menu lengkap (`.menuall`) sudah dienkripsi**
 > untuk menjaga struktur, estetika, dan stabilitas **AZBRY-MD**.
 >
@@ -157,18 +157,18 @@ Pastikan semua komponen berikut sudah terinstal di server/panel kamu:
 > - Menambah / menghapus kategori  
 > - Mengatur ulang struktur menuall  
 >
-> ðŸ‘‰ **Wajib menghubungi developer resmi (FebryWesker)** untuk akses atau versi modifikasinya.  
-> â— Hal ini untuk mencegah error dan menjaga konsistensi brand **Azbry**.
+> 👉 **Wajib menghubungi developer resmi (FebryWesker)** untuk akses atau versi modifikasinya.  
+> ❗ Hal ini untuk mencegah error dan menjaga konsistensi brand **Azbry**.
 
 ---
 <div align="center">
   
-## âš ï¸ Risiko
+## ⚠️ Risiko
 # Jika salah satu tidak terpasang, bot bisa error atau fitur tertentu tidak berfungsi dengan benar.
 
 ---
 
-## ðŸ’  SPECIAL THANKS
+## 💠 SPECIAL THANKS
 
 > _Every masterpiece has its foundation._  
 > This one stands tall because of the brilliance and dedication of:
@@ -185,9 +185,9 @@ Pastikan semua komponen berikut sudah terinstal di server/panel kamu:
   </tr>
 </table>
 
-âœ¨ Inspirasi, API, dan kontribusi mereka jadi fondasi penting dalam pengembangan **AZBRY-MD**. dari struktur modular, integrasi API, hingga pendekatan *bot intelligence* yang efisien.  
+✨ Inspirasi, API, dan kontribusi mereka jadi fondasi penting dalam pengembangan **AZBRY-MD**. dari struktur modular, integrasi API, hingga pendekatan *bot intelligence* yang efisien.  
 
-ðŸ’Ž *Respect to the creator who paved the path for the next generation of developers.*
+💎 *Respect to the creator who paved the path for the next generation of developers.*
 
 </div>
 ---
@@ -196,30 +196,30 @@ Pastikan semua komponen berikut sudah terinstal di server/panel kamu:
 
 ---
 
-# âœ¨ Layanan Kami
+# ✨ Layanan Kami
 
-## ðŸ”§ Layanan Bot (Azbry-MD / Bot Lain)
+## 🔧 Layanan Bot (Azbry-MD / Bot Lain)
 Kami menyediakan berbagai jasa profesional seputar pengelolaan dan pengembangan bot:
 
-- âš™ï¸ **Pasang SC di panel sampai jadi** â€” instalasi script, setup environment, dan testing hingga bot aktif sepenuhnya.  
-- ðŸ§© **Edit `config.js`** â€” sesuaikan konfigurasi, token, prefix, API key, dan pengaturan lainnya.  
-- ðŸ’» **Edit / modifikasi source code (SC)** â€” kustomisasi fitur, perintah, dan tampilan bot sesuai kebutuhan.  
-- ðŸ”Œ **Menambahkan plugin baru** â€” integrasi fitur tambahan ke dalam bot.  
-- ðŸ§  **Mengedit plugin lama** â€” optimasi atau ubah fungsi plugin biar lebih efisien.  
-- ðŸ› ï¸ **Jasa bot lainnya** â€” termasuk debugging, optimasi performa, setup auto-restart (PM2), dan integrasi API eksternal.  
+- ⚙️ **Pasang SC di panel sampai jadi** — instalasi script, setup environment, dan testing hingga bot aktif sepenuhnya.  
+- 🧩 **Edit `config.js`** — sesuaikan konfigurasi, token, prefix, API key, dan pengaturan lainnya.  
+- 💻 **Edit / modifikasi source code (SC)** — kustomisasi fitur, perintah, dan tampilan bot sesuai kebutuhan.  
+- 🔌 **Menambahkan plugin baru** — integrasi fitur tambahan ke dalam bot.  
+- 🧠 **Mengedit plugin lama** — optimasi atau ubah fungsi plugin biar lebih efisien.  
+- 🛠️ **Jasa bot lainnya** — termasuk debugging, optimasi performa, setup auto-restart (PM2), dan integrasi API eksternal.  
 
 ---
 
-## ðŸŒ Layanan Web
+## 🌐 Layanan Web
 Kami juga membuka jasa pembuatan website profesional, baik untuk keperluan pribadi maupun bisnis:
 
-- ðŸ–¥ï¸ **Web portofolio** â€” desain elegan untuk menampilkan karya, identitas, dan profil kamu.  
-- ðŸ’¼ **Project web custom** â€” landing page, web app ringan, atau sistem sederhana sesuai permintaan.  
-- ðŸ”„ **Maintenance & update** â€” perbaikan, pembaruan konten, atau deploy ulang.  
+- 🖥️ **Web portofolio** — desain elegan untuk menampilkan karya, identitas, dan profil kamu.  
+- 💼 **Project web custom** — landing page, web app ringan, atau sistem sederhana sesuai permintaan.  
+- 🔄 **Maintenance & update** — perbaikan, pembaruan konten, atau deploy ulang.  
 
 ---
 
-## âœ… Keunggulan
+## ✅ Keunggulan
 - Penjelasan dan konfirmasi scope kerja sebelum mulai.  
 - Backup file (jika tersedia) sebelum dilakukan perubahan.  
 - Testing penuh setelah pekerjaan selesai.  
@@ -229,16 +229,16 @@ Kami juga membuka jasa pembuatan website profesional, baik untuk keperluan priba
 
 <div align="center">
   
-## âš ï¸ Catatan
+## ⚠️ Catatan
 Pastikan kamu menyediakan akses (panel, SSH, atau file) yang dibutuhkan sebelum pengerjaan.  
 Backup data kamu selalu disarankan sebelum instalasi atau modifikasi sistem.
 
 ---
 
-## ðŸ’¬ Hubungi CS
+## 💬 Hubungi CS
 
 Butuh bantuan atau mau order jasa?  
-Klik tombol di bawah untuk langsung chat via WhatsApp ðŸ‘‡  
+Klik tombol di bawah untuk langsung chat via WhatsApp 👇  
 
 <a href="https://wa.me/6281510040802" target="_blank">
   <img src="https://img.shields.io/badge/Chat%20CS%20WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
@@ -246,7 +246,7 @@ Klik tombol di bawah untuk langsung chat via WhatsApp ðŸ‘‡
 
 ---
 
-## ðŸ§¾ Lisensi
+## 🧾 Lisensi
 Kode ini bersifat edukatif dan dapat dikembangkan bebas sesuai kebutuhan.  
 Tetap hargai **credit** dan **komunitas**.
 
