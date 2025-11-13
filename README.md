@@ -148,6 +148,19 @@ Pastikan semua komponen berikut sudah terinstal di server/panel kamu:
 
 ---
 
+> ### 🔒 Edit Menu & MenuAll
+> Beberapa bagian bot seperti **isi menu (`.menu`) dan menu lengkap (`.menuall`) sudah dienkripsi**
+> untuk menjaga struktur, estetika, dan stabilitas **AZBRY-MD**.
+>
+> Jika kamu ingin:
+> - Mengubah tampilan atau isi menu  
+> - Menambah / menghapus kategori  
+> - Mengatur ulang struktur menuall  
+>
+> 👉 **Wajib menghubungi developer resmi (FebryWesker)** untuk akses atau versi modifikasinya.  
+> ❗ Hal ini untuk mencegah error dan menjaga konsistensi brand **Azbry**.
+
+---
 <div align="center">
   
 ## ⚠️ Risiko
