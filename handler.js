@@ -1235,7 +1235,6 @@ if (!isPrems && plugin.limit) {
             if (m) {
                 if (m.sender && (user = global.db.data.users[m.sender])) {
                     user.exp += m.exp
-                    user.limit -= m.limit * 1
                 }
 
                 let stat
