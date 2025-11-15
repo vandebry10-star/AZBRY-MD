@@ -195,7 +195,6 @@ Jalankan urutan berikut setelah repo di‑clone:
 cd AZBRY-MD-main **(atau apapun nama foldernya)** <<< setelah ini langsung lanjut 🔽
 npm i <<< tunggu sekitar 4 menit **(WAJIB SAMPAI SELESAI KALAU TIDAK BOT TIDAK BERFUNGSI)**
 npm start <<< tunggu sampai diminta memasukkan nomor bot (awalan 628xx)
-**(muncul kode pairing harus langsung disconnect)**
 ```
 
 > **Catatan:**
