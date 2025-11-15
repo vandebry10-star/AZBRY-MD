@@ -101,7 +101,81 @@ global.btc          = 'ISI_APIKEY_KAMU'       // <-- UBAH!
 global.APIs         = { btc: 'https://api.botcahx.eu.org' }
 global.APIKeys      = { 'https://api.botcahx.eu.org': global.btc }
 ```
+---
 
+### 🔑 Cara Membuat APIKEY BotCahx **(WAJIB BUAT)**
+
+BotCahx menyediakan berbagai fitur API seperti TikTok, Instagram, Downloader, Tools, AI, dan sebagainya.
+Untuk memakai fitur tersebut, user harus membuat apikey sendiri.
+
+Ikuti langkah-langkah berikut:
+
+
+---
+
+### ✅ 1. Daftar / Login ke Website BotCahx
+
+- Buka:
+
+- https://api.botcahx.eu.org/
+
+- Kalau belum punya akun → klik Register/Get Started
+
+- Kalau sudah punya akun → klik Login
+
+
+
+---
+
+### ✅ 2. Masuk ke Menu “Dashboard”
+
+- Setelah login:
+
+- Cari menu My Dashboard
+
+- Akan muncul tombol Generate APIKEY
+
+
+
+---
+
+### ✅ 3. Klik “Generate APIKEY”
+
+- Sistem akan membuatkan APIKEY unik untuk akun kamu
+
+- Simpan baik-baik APIKEY tersebut
+
+- APIKEY hanya muncul sekali saat dibuat
+
+
+
+---
+
+### ✅ 4. Masukkan APIKEY ke Config Bot
+
+- Biasanya di file config.js / .env / atau di plugin:
+
+```bash
+global.btc = "ISI_APIKEY_KAMU"
+Atau sesuai tempat yang dipakai bot kamu.
+```
+
+---
+
+### ⚠️ 5. Wajib Simpan APIKEY Secara Rahasia
+
+- Jangan share ke orang lain
+
+- Jangan upload ke GitHub publik
+
+- Jangan tempel di screenshot
+
+- Jangan kirim tanpa sensor
+
+
+## APIKEY adalah identitas kamu, kalau bocor = habis sudah.
+
+---
 ### 🔎 Tentang **JID**
 - **JID** = *WhatsApp ID* (format internal).
 - Untuk user: `628xxx@s.whatsapp.net`  
@@ -116,10 +190,12 @@ global.APIKeys      = { 'https://api.botcahx.eu.org': global.btc }
 Jalankan urutan berikut setelah repo di‑clone:
 
 ```bash
-cd AZBRY-MD <<< setelah ini langsung lanjut 🔽
-npm i node-cron <<< tunggu sekitar 3 menit
-npm i <<< tunggu sekitar 3 menit (kalau ini belum kelar bot tidak berfungsi dengan baik)
+# SETELAH UNARCHIVE TIDAK PERLU DI MOVE!!!
+
+cd AZBRY-MD-main **(atau apapun nama foldernya)** <<< setelah ini langsung lanjut 🔽
+npm i <<< tunggu sekitar 4 menit **(WAJIB SAMPAI SELESAI KALAU TIDAK BOT TIDAK BERFUNGSI)**
 npm start <<< tunggu sampai diminta memasukkan nomor bot (awalan 628xx)
+**(muncul kode pairing harus langsung disconnect)**
 ```
 
 > **Catatan:**
